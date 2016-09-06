@@ -29,6 +29,11 @@ Support
 -------
 For more information about the SDK, please feel free to contact support@dynamsoft.com.
 
+Blog
+------
+[SANE Scanner Access Using JavaScript on Linux][4]
+
 [1]:http://labs.dynamsoft.com/linux-web-twain.htm
 [2]:http://www.dynamsoft.com/Downloads/DownloadLog.aspx?server=1&product=DynamicWebTWAIN11.3.2.deb
 [3]:http://www.dynamsoft.com/Downloads/DownloadLog.aspx?server=1&product=DWTLinux-Resources.zip
+[4]:http://www.codepool.biz/sane-scanner-access-javascript-linux.html
