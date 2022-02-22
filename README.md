@@ -1,15 +1,19 @@
-Linux Web TWAIN: Hello World
-============
+# Linux Web TWAIN: Hello World
 
-The sample demonstrates how to create a simple HTML5 scanning app with [Dynamic Web TWAIN for Linux][1] on **Ubuntu 14.04**.
 
-![Android barcode scanner](http://www.codepool.biz/wp-content/uploads/2016/08/dwt-linux-helloworld.PNG)
+The sample demonstrates how to create a simple HTML5 document scanning app with [Dynamic Web TWAIN v17.2](https://www.dynamsoft.com/web-twain/downloads/) on **Ubuntu 14.04**.
 
-Getting Started
----------------
-1. Download and install [dynamic_web_twainx64.deb][2].
-2. Download **Resources** [package][3].
-3. Install and start **nginx**:
+![Linux web document scanning](http://www.codepool.biz/wp-content/uploads/2016/08/dwt-linux-helloworld.PNG)
+
+## Web TWAIN SDK Activation
+Apply for a [valid license key](https://www.dynamsoft.com/customer/license/trialLicense?product=dwt) and update the following JavaScript code:
+
+```javascript
+Dynamsoft.DWT.ProductKey = 'LICENSE KEY';
+```
+
+## Usage
+1. Install and start **nginx**:
 
     ```
     sudo apt-get update
@@ -17,23 +21,15 @@ Getting Started
     sudo nginx
     ```
 
-4. Create a folder **linux-dwt-beta** under **/usr/share/nginx/html/**.
-5. Copy **Resources** and **helloworld.html** to **/usr/share/nginx/html/linux-dwt-beta**.
-6. Open web browser and visit **http://localhost/dwt-linux-beta/helloworld.html** to access scanner.
+2. Create a folder **linux-dwt** under **/usr/share/nginx/html/**.
+3. Copy **Resources** and **helloworld.html** to **/usr/share/nginx/html/linux-dwt**.
+4. Visit `http://localhost/dwt-linux/helloworld.html` in your web browser to test the web document scanning app on Ubuntu.
 
-The Fancy Online Demo
----------------------
-https://www.dynamsoft.com/Demo/DWTLinux/online_demo_scan.aspx
+## Web TWAIN Online Demo for Windows, Linux (both x64 and arm64), and macOS
+https://demo.dynamsoft.com/web-twain/
 
-Support
--------
+## Support
 For more information about the SDK, please feel free to contact support@dynamsoft.com.
 
-Blog
-------
-[SANE Scanner Access Using JavaScript on Linux][4]
-
-[1]:http://labs.dynamsoft.com/linux-web-twain.htm
-[2]:http://www.dynamsoft.com/Downloads/DownloadLog.aspx?server=1&product=DynamicWebTWAIN11.3.2.deb
-[3]:http://www.dynamsoft.com/Downloads/DownloadLog.aspx?server=1&product=DWTLinux-Resources.zip
-[4]:http://www.codepool.biz/sane-scanner-access-javascript-linux.html
+## Blog
+[SANE Scanner Access Using JavaScript on Linux](http://www.codepool.biz/sane-scanner-access-javascript-linux.html)
